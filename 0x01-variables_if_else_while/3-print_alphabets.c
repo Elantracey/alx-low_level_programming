@@ -12,11 +12,11 @@ int main(void)
 	/*print small letters alphabets */
 	for (i = 'a'; i <= 'z'; i++)
 	{
-	      putchar(i);
+		putchar(i);
 	}
 	for (i = 'A'; i <= 'Z'; i++)
 	{
-	      putchar(i);
+		putchar(i);
 	}
 	putchar('\n');
 
