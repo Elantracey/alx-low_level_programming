@@ -1,24 +1,24 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "holberton.h"
 /**
- * main - Entry point
+ * main - Prints the add of the Fibonacci numbers
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
-void main()
+int main(void)
 {
-	int fib1 = 1, fib2 = 2, fib3, 50, count = 0;
+	int c;
+	long int n1, n2, fn;
 
-	printf("%d\n", fib1);
-	printf("%d\n", fib2);
-	count = 2;
-	while (count < 50)
+	n1 = 1;
+	n2 = 2;
+	printf("%ld, %ld", n1, n2);
+	for (c = 0; c < 48; c++)
 	{
-		fib3 = fib1 + fib2;
-		count++;
-		printf("%d\n", fib3);
-		fib1 = fib2;
-		fib2 = fib3;
+		fn = n1 + n2;
+		printf(", %ld", fn);
+		n1 = n2;
+		n2 = fn;
 	}
+	printf("\n");
+	return (0);
 }
