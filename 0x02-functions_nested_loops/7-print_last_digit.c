@@ -5,7 +5,6 @@
  * Return: value of the last digit
  */
 int print_last_digit(int nld)
-
 {
 	int pld;
 	pld = (nld % 10);
