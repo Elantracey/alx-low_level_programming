@@ -6,7 +6,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+void main()
 {
 	int fib1 = 1, fib2 = 2, fib3, 50, count = 0;
 
