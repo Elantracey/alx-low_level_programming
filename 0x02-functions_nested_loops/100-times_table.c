@@ -1,40 +1,46 @@
 #include "holberton.h"
+
 /**
- * print_times_table - Entry point
- * @n: input
- * rone = row, cone = column, d = digits of current result
- * Return: times table
- * add extra space past single digit
+ * print_times_table - Prints the n times table
+ *
+ * @n: number times table (0 < n <= 15)
+ *
+ * Return: no return
  */
 void print_times_table(int n)
 {
-        int rone, cone, d;
+	int a, b, op;
 
-        for (rone >= 0; rone <= 15; rone++)
-        {
-                _putchar('0');
-                _putchar(',');
-                _putchar(' ');
-                for (cone = 1; cone <= 15; cone++)
-                {
-                        d = (rone * cone);
-                        if ((d / 10) > 0)
-                        {
-                                _putchar((d / 10) + '0');
-                        }
-                        else
-                        {
-                                _putchar(' ');
-                        }
-                        _putchar((d % 10) + '0');
-
-                        if (cone < 15)
-                        {
-                                _putchar(',');
-                                _putchar(' ');
-                        }
-                }
-                _putchar('\n');
-        }
-	return (0);
+	if (n >= 0 && n <= 15)
+	{
+		for (a = 0; a <= n; a++)
+		{
+			_putchar(48);
+			for (b = 1; b <= n; b++)
+			{
+				op = a * b;
+				_putchar(44);
+				_putchar(32);
+				if (op <= 9)
+				{
+					_putchar(32);
+					_putchar(32);
+					_putchar(op + 48);
+				}
+				else if (op <= 99)
+				{
+					_putchar(32);
+					_putchar((op / 10) + 48);
+					_putchar((op % 10) + 48);
+				}
+				else
+				{
+					_putchar(((op / 100) % 10) + 48);
+					_putchar(((op / 10) % 10) + 48);
+					_putchar((op % 10) + 48);
+				}
+			}
+			_putchar('\n');
+		}
+	}
 }
