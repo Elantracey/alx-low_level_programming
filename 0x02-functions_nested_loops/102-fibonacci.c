@@ -1,10 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "holberton.h"
 /**
- * main - Entry point
+ * main - Prints the add of the Fibonacci numbers
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
