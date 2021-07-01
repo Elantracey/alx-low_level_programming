@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *  _strcat - function to concacenate two strings
+ *  _strncat - function to concacenate two strings
  * *@dest: pointer to the first string we want to change
  * *@src: pointer for the second string
  * @n: number of bytes
