@@ -5,7 +5,6 @@
  * @n: input
  * Return: decrypted string
  */
-
 char *rot13(char *s)
 {
 	int count = 0, i;
@@ -24,6 +23,5 @@ char *rot13(char *s)
 		}
 		count++;
 	}
-
 	return (s);
 }
