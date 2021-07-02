@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * rot13 - Entry point
  * ONE if, TWO loops only...
@@ -28,5 +27,4 @@ char *rot13(char *n)
 		}
 		i++;
 	}
-	return (n);
 }
