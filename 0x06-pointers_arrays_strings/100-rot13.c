@@ -2,7 +2,7 @@
 /**
  * rot13 - Entry point
  * ONE if, TWO loops only...
- * @n: input
+ * @s: input
  * Return: decrypted string
  */
 char *rot13(char *s)
