@@ -1,5 +1,4 @@
-  
-#include "holberton.h"
+  #include "holberton.h"
 
 /**
  * power_operation - returns the natural square root of a number.
