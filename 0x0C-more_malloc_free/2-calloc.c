@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * _calloc - Entry point
- *@nmemb: size of the array
- *@size: size of the type
- * Return: a pointer to an array
+ * _calloc - allocates memory for an array, using malloc
+ * @nmemb: number of elements in the array
+ * @size: size of the byte
+ * Return: void pointer to the allocated memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -22,4 +22,3 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		p[i] = 0;
 	return (p);
 }
-
